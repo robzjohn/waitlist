@@ -41,12 +41,18 @@ header,form{
     
 }
 
-
+.sent,
 .send-btn,
 .remove-btn,
 .submit-btn {
     padding: .8rem;
     margin: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.sent {
+    background-color: rgb(142, 221, 23);
+    
 }
 
 
