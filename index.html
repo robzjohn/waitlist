@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
@@ -15,16 +14,57 @@
     <title>Waitlist</title>
 </head>
 <body>
-    <i class="far fa-bell"></i>
 
     <header>
         <h2>Waitlist</h2>
     </header>
-    
+
    
     <form>
-        <input type="text" class="name-input">
-        <button class="submit-button" type="submit">
+
+        <label style="font-size:24px" for="name-input">name: </label>
+        <input type="text" class="name-input" id="name-input" size="6" required>   
+        <br>
+
+        <label style="font-size:24px" for="phone-input">phone: </label>
+        <input type="tel" class="phone-input" id="phone-input" size="6" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+        <br>      
+
+        <label style="font-size:24px" for="in-or-out">where: </label>        
+        <select id="in-or-out" name="in-or-out">
+            <option value="inside">inside</option>
+            <option value="outside">outside</option>
+            <option value="inside or out">either/or</option>
+        </select>
+        <br> 
+              
+        <label style="font-size:24px" for="party-size">size: </label>        
+        <select id="party-size" name="party-size" style="width: 100px">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            
+
+        </select>
+        <br>  
+        
+        
+        
+        <button class="submit-btn" type="submit">
+            submit
             <i class="fas fa-check"></i>
         </button>
     </form>

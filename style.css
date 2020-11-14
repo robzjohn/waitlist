@@ -14,11 +14,12 @@ body{
 
 header,form{
 
-    font-size: 1rem;
-    padding-top: 1rem;
-    display: flex;
+    font-size: 1.3rem;
+    padding: .5rem;
+    display: block;
     justify-content: center;
-    align-content: center;
+    width: 100%;
+    
 
 }
 
@@ -34,11 +35,18 @@ header,form{
 }
 
 .customer{
-    margin: 1rem;
+    display: flex;
+    margin: .5rem;
+    font-size: large;
     
 }
 
 
-.btn {
-    padding: .3rem;
+.send-btn,
+.remove-btn,
+.submit-btn {
+    padding: .8rem;
+    margin: 1rem;
 }
+
+
